@@ -41,5 +41,9 @@
   "name": "@npm_tentwenty/strapi-plugin-request-id-v5",
   "description": "Add a unique id to each request made to your server and track your users' activity in the logs. v5 migration of strapi-plugin-request-id by Baboo7 https://github.com/Baboo7",
   "license": "MIT",
-  "author": "tentwenty <agnelo@tentwenty.me>"
+  "author": "tentwenty <agnelo@tentwenty.me>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agnelonicolaus1020/strapi-plugin-request-id-v5.git"
+  }
 }
