@@ -1,49 +1,45 @@
 {
-  "name": "strapi-plugin-request-id",
-  "version": "1.2.0",
-  "description": "Add a unique id to each request made to your server and track your users' activity in the logs.",
-  "strapi": {
-    "name": "request-id",
-    "description": "Add a unique id to each request made to your server and track your users' activity in the logs.",
-    "kind": "plugin",
-    "displayName": "Request Id"
+  "version": "1.0.0",
+  "keywords": [],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-server": {
+      "source": "./server/src/index.js",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify"
   },
   "dependencies": {
-    "cls-hooked": "4.2.2",
-    "uuid": "8.3.2"
+    "cls-hooked": "^4.2.2"
+  },
+  "devDependencies": {
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.29.0",
+    "prettier": "^3.6.2"
   },
   "peerDependencies": {
-    "@strapi/strapi": "^4.0.0"
+    "@strapi/sdk-plugin": "^5.3.2",
+    "@strapi/strapi": "^5.29.0"
   },
-  "author": {
-    "name": "Baboo",
-    "url": "https://github.com/Baboo7"
+  "strapi": {
+    "kind": "plugin",
+    "name": "strapi-plugin-request-id-v5",
+    "displayName": "request-id-v5",
+    "description": "Add a unique id to each request made to your server and track your users' activity in the logs. v5 migration of strapi-plugin-request-id by Baboo7 https://github.com/Baboo7"
   },
-  "maintainers": [
-    {
-      "name": "Baboo",
-      "url": "https://github.com/Baboo7"
-    }
-  ],
-  "engines": {
-    "node": ">=12.x.x <=18.x.x",
-    "npm": ">=6.0.0"
-  },
-  "keywords": [
-    "strapi",
-    "plugin",
-    "request",
-    "id",
-    "correlation",
-    "id"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Baboo7/strapi-plugin-request-id.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Baboo7/strapi-plugin-request-id/issues"
-  },
-  "homepage": "https://github.com/Baboo7/strapi-plugin-request-id#readme",
-  "license": "MIT"
+  "name": "@npm_tentwenty/strapi-plugin-request-id-v5",
+  "description": "Add a unique id to each request made to your server and track your users' activity in the logs. v5 migration of strapi-plugin-request-id by Baboo7 https://github.com/Baboo7",
+  "license": "MIT",
+  "author": "tentwenty <agnelo@tentwenty.me>"
 }

@@ -1,8 +1,13 @@
-'use strict';
-
-const register = require('./register');
+/**
+ * Application methods
+ */
 const bootstrap = require('./bootstrap');
 const destroy = require('./destroy');
+const register = require('./register');
+
+/**
+ * Plugin server methods
+ */
 const config = require('./config');
 const contentTypes = require('./content-types');
 const controllers = require('./controllers');
@@ -12,14 +17,15 @@ const policies = require('./policies');
 const services = require('./services');
 
 module.exports = {
-  register,
   bootstrap,
   destroy,
+  register,
+
   config,
   controllers,
+  contentTypes,
+  middlewares,
+  policies,
   routes,
   services,
-  contentTypes,
-  policies,
-  middlewares,
 };
